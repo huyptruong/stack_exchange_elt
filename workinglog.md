@@ -366,7 +366,7 @@ Need secret access key to talk to s3
 
 In the initial_eda.ipynb, why can't I run my code? I thought I already installed requests.
 
-Play around with Poetry
+Play around with Poetry.
 
 | Feature             | Poetry                      | Pip + Virtualenv           |
 |---------------------|-----------------------------|----------------------------|
