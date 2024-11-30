@@ -12,8 +12,18 @@ In general, the job will make the decision on the data type.
 
 ## Next step
 * Develop a proof of concept for the entire analytics pipeline: extract data into a preferred data format, save the data source into s3, connect athena to it for querying, and finally connect Tableau to athena for visualization.
+  * ✅ Got the code for scraping data as JSON and uploading it to s3.
+  * ❓ I'm not sure how to efficiently do the partition in s3. Do I need to rewrite my code ```webscrape_and_s3upload.py```? The concept of partition sounds very much like creating a bunch of folders for storing data on different days.
+  * ❓ My problem right now is I don't know what to do: json -> parquet, then do query in Athena?
+    * I can already connect Tableau to s3 https://help.tableau.com/current/pro/desktop/en-us/examples_amazons3.htm.
+    * Memory could be a huge issue too. Even though data are not stored locally, my machine must have been "holding" the data while scraping the web. I'm thinking my RAM. So an obvious question is whether my laptop's RAM can hold a lot of data.
+      * Maybe that's why we introduce the concept of partitioning.
+      * Or we could just run the code on the cloud and push everything else up there.
 * Automation: Use Lambda or Airflow to trigger dbt runs and automate workflows.
-
+  * ❓Why is there a need for Airflow? Why can't we do everything in AWS?
+* **Learn more about dbt**
+* **Experiment the difference between parquet and csv**
+* **Review the idea of partition from the DE specialization on Coursera**
 ## More on data type (from Bobby)
 
 When comparing Parquet to CSV, Parquet generally offers several advantages, particularly for large-scale data processing, analytics, and storage. Here’s a breakdown of the key differences and advantages of Parquet over CSV:
