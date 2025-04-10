@@ -1,3 +1,43 @@
+# 4/9/2025
+Added a virtual environment
+
+Improve the web scraping code with pagination capabiltiy
+
+# 12/11/2024
+
+Talk with Bobby about him leading the sessions.
+
+# 12/2/2024
+
+How to add comments to the pull request.
+* The shorter the commit, the more likely I will get feedback from the reviewer.
+
+Watch out for the API rate limit on stack exchange
+* Bobby thinks it's per credential.
+* Why don't we just create 10 ghosts account for the workaround.
+
+End-goal Objective
+1. What are the questions with the most scores?
+2. What are the answers to those questions?
+3. Who provided those answers
+  * We assume that these people are experts in the field of landscaping and gardening.
+  * We'll reach out to them to validate our list of ideas.
+
+Nice-to-have goal:
+* Create a chatbot to answer questions using LLM technology.
+
+Question: What do people do as the data keep changing.
+
+So we agreed that since the size of the gardening se is small, we're just gonna run the code everytime to get the latest data. At some point it's not going to be sustainable for us, and we'll come back to partitioning or incremental extraction.
+
+## Next step
+* Show Bobby the partition example that I learned from my Data Engineering course sometime ago.
+* Update the scraper to have id fields and run the code (try increasing it to 10, 100, etc., measure the run time, see if we have any rate limit error)
+* Look into Athena, Bobby would love to see me presenting Athena.
+* Study dbt
+
+Set up metric and progress tracker
+
 # 11/25/2024
 
 We want to store data in a way so that we don't lose any critical information and we can come back to it.
@@ -598,5 +638,3 @@ Start writing my internship journal to post on linkedin. (I need to write 2 jour
 Thoughts:
 I have a government-sponsored account with Coursera, so I can take any courses on that platform that I want. As we’re building the data architect for this project, I want to take some courses to help me become a better data engineer. Can we review a couple of courses on Coursera? If you see anything helpful for this project, please recommend it to me.
 If we have time for chatbot, I think we can leverage free GPU or TPU from kaggle. It’s actually very easy to do. Google offers Google AI Studio https://aistudio.google.com/ completely free for developers.
-
-
